@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .shop_page_1st_section {
+            background-image: url("img/Rectangle\ 1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40vh;
+        }
+
+        .shope_pagination {
+            padding: 20px 30px;
+            margin: 0px 20px;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        @media screen and (max-width:575px) {
+        .menu_a_img {
+            margin: 6px 0;
+        }
+
+        .card_1 {
+            margin: 20px 0;
+        }
+        .last_section{
+            flex-wrap: wrap;
+        }
+        .last_input_part{
+            text-align: center !important;
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        .home_section {
+            width: 100% !important;
+            justify-content: center !important;
+        }
+
+        .home_section_t {
+            width: 95% !important;
+            margin: 0 !important;
+            padding: 20px !important;
+        }
+
+        .browse_img {
+            margin: 30px 0;
+        }
+        
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light ">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
+            <a class="navbar-link" href="#"><img src="../BootsTrap/img/Meubel House_Logos-05.png"></a>
+            <h1>Furniro</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" style="justify-content: flex-end;" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_shoppage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_aboutpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_contentpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">content</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" collapse navbar-collapse text-center  float-right" style="justify-content: flex-end;"
+                id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_checkoutpage.html"><img
+                                style="padding: 10px 20px;" src="../BootsTrap/img/mdi_account-alert-outline.png"
+                                class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_blogpage.html"><img
+                                style="padding: 10px 20px;" src="../BootsTrap/img/akar-icons_search.png"
+                                class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="#"><img style="padding: 10px 20px;"
+                                src="../BootsTrap/img/akar-icons_heart.png" class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage cart page.html"><img
+                                style="padding: 10px 20px;"
+                                src="../BootsTrap/img/ant-design_shopping-cart-outlined.png"
+                                class="menu_a_img"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="shop_page_1st_section w-100 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1>cart</h1>
+            <a href="BS5 !st Responsive WebPage.html"><button class="btn"
+                    style="font-weight: 700;">home</button></a><span style="font-weight: 900;">></span><a
+                href="BS5 !st Responsive WebPage cart page.html"><button class="btn"
+                    style="font-weight: 700;">cart</button></a>
+        </div>
+    </div>
+    <div class="container-fluid w-100 d-flex">
+        <div style="width: 50%;" class=" p-5">
+            <h1>Billing Details</h1>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <label>First name</label>
+                    <input class="pt-2 pb-2 form-control" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label>last name</label>
+                    <input class="form-control pt-2 pb-2" type="text">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <label>Company Name (Optional)</label>
+                    <input class="form-control pt-2 pb-2" type="text">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 dropdown">
+                    <button class="btn btn-light dropdown-toggle w-100 pt-2 pb-2" data-bs-toggle="dropdown">Sri
+                        lanka</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <label>Street address</label>
+                    <input class="form-control pt-2 pb-2" type="text">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <label>Town / City</label>
+                    <input class="form-control pt-2 pb-2" type="text">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 dropdown">
+                    <label>Province</label>
+                    <button class="btn btn-light dropdown-toggle w-100 pt-2 pb-2" data-bs-toggle="dropdown">Western
+                        Province</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <label>phone</label>
+                    <input class="form-control pt-2 pb-2" type="text">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <label>Email Address</label>
+                    <input class="form-control pt-2 pb-2" type="text">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <input class="form-control pt-2 pb-2" type="text" placeholder="Additional information">
+                </div>
+            </div>
+        </div>
+        <div style="width: 50%;" class="m-5 p-5">
+            <div class="d-flex mt-5 soping_bill_div"
+                style="text-align: left;justify-content: space-around; border-bottom: 1px solid gray;">
+                <div>
+                    <h1 class="mb-4">Product</h1>
+                    <p class="mb-4">Asgaard sofa * 1</p>
+                    <p style="font-weight: 700;">Subtotal</p>
+                    <p style="font-weight: 700;">Total</p>
+                </div>
+                <div style="text-align: right;">
+                    <h1 class="mb-4">Subtotal</h1>
+                    <p class="mb-4">Rs. 250,000.00</p>
+                    <p>Rs. 250,000.00</p>
+                    <h1 style="font-weight: 700;" class="text-warning">Rs. 250,000.00</h1>
+                </div>
+            </div>
+            <div class="d-flex mt-3" style="align-items: center;">
+                <input type="radio" style="width: 20px; height: 20px; margin-right: 10px;"> <label
+                    style="font-size: 25px;">Direct Bank Transfer</label>
+            </div>
+            <div class="mt-5" style="color:grey">
+                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                    Your order will not be shipped until the funds have cleared in our account.</p>
+                <div class="mt-5" style="display: flex; flex-direction: column;">
+                    <div>
+                        <input type="radio" style="width: 20px; height: 20px; margin-right: 10px;"> <label
+                            style="font-size: 22px;">Direct Bank Transfer</label>
+                    </div>
+                    <div>
+                        <input type="radio" style="width: 20px; height: 20px; margin-right: 10px;"> <label
+                            style="font-size: 22px;">cash on delivery</label>
+                    </div>
+                </div>
+            </div>
+            <p style="font-size: 20px;" class="mt-5">
+                Your personal data will be used to support your experience throughout this website, to manage access to
+                your account, and for other purposes described in our privacy policy.
+            </p>
+            <div class="w-100 d-flex justify-content-center mt-5">
+                <button class="btn btn-outline-dark pt-2 pb-2" style="width: 200px;">Place Order</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

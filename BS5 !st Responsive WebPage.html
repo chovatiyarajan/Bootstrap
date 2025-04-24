@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .home_section {
+        height: 85vh;
+        background-image: url("img/scandinavian-interior-mockup-wall-decal-background\ 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .browse_img_hover{
+        transition: 0.5s;
+    }
+    .browse_img_hover:hover{
+        opacity: 0.7 !important;
+    }
+    .card_img_top{
+        transition: 0.1s !important;
+    }
+    .card_img_top:hover {
+        opacity: 1 !important;
+    }
+
+    @media screen and (max-width:575px) {
+        .menu_a_img {
+            margin: 6px 0;
+        }
+
+        .card_1 {
+            margin: 20px 0;
+        }
+
+        .last_section {
+            flex-wrap: wrap;
+        }
+
+        .last_input_part {
+            text-align: center !important;
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        .home_section {
+            width: 100% !important;
+            justify-content: center !important;
+        }
+
+        .home_section_t {
+            width: 95% !important;
+            margin: 0 !important;
+            padding: 20px !important;
+        }
+
+        .browse_img {
+            margin: 30px 0;
+        }
+    }
+    .nav-link_all{
+        animation-name: display;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
+    .home_section_t{
+        position: absolute;
+        animation-name: display;
+        animation-duration:3s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes display{
+        from {
+            opacity: 0;
+            rotate: 20deg;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes display{
+        from {
+            opacity: 0;
+            transform:rotateZ(0px);
+        }
+
+        to {
+            opacity: 1;
+            transform:rotateZ(140px);
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  navbar-light ">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
+            <a class="navbar-link" href="#"><img src="../BootsTrap/img/Meubel House_Logos-05.png"></a>
+            <h1>Furniro</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" style="justify-content: flex-end;" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_shoppage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_aboutpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_contentpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">content</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" collapse navbar-collapse text-center  float-right" style="justify-content: flex-end;"
+                id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_checkoutpage.html"><img
+                                style="padding: 10px 20px;" src="../BootsTrap/img/mdi_account-alert-outline.png"
+                                class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_blogpage.html"><img
+                                style="padding: 10px 20px;" src="../BootsTrap/img/akar-icons_search.png"
+                                class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="#"><img style="padding: 10px 20px;"
+                                src="../BootsTrap/img/akar-icons_heart.png" class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage cart page.html"><img
+                                style="padding: 10px 20px;"
+                                src="../BootsTrap/img/ant-design_shopping-cart-outlined.png"
+                                class="menu_a_img"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="home_section w-100 container-fluid d-flex align-items-center" style="justify-content: flex-end;">
+        <div class="home_section_t p-5 m-5 " style="width:30%;background-color: antiquewhite;">
+            <p style="font-weight: 900;">New Arrival !</p>
+            <h1 class="text-warning" style="font-weight: 700;">Discover Our New Collection</h1>
+            <p style="font-weight: 500;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                nec ullamcorper mattis.
+            </p>
+            <button class="btn btn-warning text-light" style="width: 40%;font-weight: 700">Buy Now</button>
+        </div>
+    </div>
+    <div class="container mt-5 text-center">
+        <h2>Browse The Range</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 d-flex justify-content-center">
+            <div class="text-center">
+                <img class="browse_img browse_img_hover" src="../BootsTrap/img/Mask Group.png   " style="width: 97%;">
+                <h4>Dining</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+            <div class="text-center">
+                <img class="browse_img browse_img_hover" src="../BootsTrap/img/Image-living room.png" style="width: 97%;">
+                <h4>Living</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+            <div class="text-center">
+                <img class="browse_img browse_img_hover" src="../BootsTrap/img/image 101.png" style="width: 97%;">
+                <h4>Bedroom</h4>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center mt-5">Our Projects</h1>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="row" style="width: 90%;">
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/image 1.png" style="opacity: 0.5;" class="card-img-top card_img_top">
+                    <div class="card-body">
+                        <h3 class="card-title">Syltherine</h3>
+                        <p>Stylish cafe chair</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 2.500.000</label>
+                            <label style="text-decoration:line-through;">Rp 3.500.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/Images (1).png"  style="opacity: 0.5;" class="card-img-top card_img_top">
+                    <div class="card-body">
+                        <h3 class="card-title">Syltherine</h3>
+                        <p>Stylish cafe chair</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 2.500.000</label>
+                            <label style="text-decoration:line-through;">Rp 3.500.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/sdbuhdihuihigaigdgidgi.png"  style="opacity: 0.5;" class="card-img-top card_img_top">
+                    <div class="card-body">
+                        <h3 class="card-title">Lolito</h3>
+                        <p>Luxury big sofa</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 7.000.000</label>
+                            <label style="text-decoration:line-through;">Rp 14.000.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/12.png" style="opacity: 0.5;"  class="card-img-top card_img_top ">
+                    <div class="card-body">
+                        <h3 class="card-title">Respira</h3>
+                        <p>Outdoor bar table and stool</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 500.000</label>
+                            <label style="text-decoration:line-through;">Rp 6.500.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="row" style="width: 90%;">
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/1234.png" style="opacity: 0.5;"  class="card-img-top card_img_top">
+                    <div class="card-body">
+                        <h3 class="card-title">Syltherine</h3>
+                        <p>Stylish cafe chair</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 2.500.000</label>
+                            <label style="text-decoration:line-through;">Rp 3.500.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/wqwqw.png" style="opacity: 0.5;"  class="card-img-top card_img_top">
+                    <div class="card-body">
+                        <h3 class="card-title">Syltherine</h3>
+                        <p>Stylish cafe chair</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 2.500.000</label>
+                            <label style="text-decoration:line-through;">Rp 3.500.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/image 7.png" style="opacity: 0.5;" class="card-img-top card_img_top">
+                    <div class="card-body">
+                        <h3 class="card-title">Lolito</h3>
+                        <p>Luxury big sofa</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 7.000.000</label>
+                            <label style="text-decoration:line-through;">Rp 14.000.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="card card_1">
+                    <img src="../BootsTrap/img/image 8.png" style="opacity: 0.5;" class="card-img-top card_img_top">
+                    <div class="card-body">
+                        <h3 class="card-title">Respira</h3>
+                        <p>Outdoor bar table and stool</p>
+                        <div class="d-flex" style="justify-content: space-between;">
+                            <label>Rp 500.000</label>
+                            <label style="text-decoration:line-through;">Rp 6.500.000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center w-100 mt-5 mb-5">
+        <button class="btn btn-outline-warning" style="width: 300px;">Show More</button>
+    </div>
+    <div class="row bg-light d-flex align-items-center">
+        <div class="col-sm-4">
+            <div class="p-5 ">
+
+                <h1>50+ Beautiful rooms inspiration</h1>
+                <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+                <button class="btn btn-warning" style="border-radius:0px;">Explore More</button>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="../BootsTrap/img/Image.png" width="100%">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../BootsTrap/img/Rectangle 25.png" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../BootsTrap/img/Rectangle 45.png" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../BootsTrap/img/Rectangle 40.png" alt="New York" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-pill"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-pill"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex text-center mt-5 mb-5 last_section">
+        <div>
+            <h1 class="mb-5" style="font-weight: 700;">Funiro.</h1>
+            <p class="mt-5">400 University Drive Suite 200 Coral Gables,
+                FL 33134 USA</p>
+        </div>
+        <div class="container">
+            <p><a>Links</a></p>
+            <ul class="navbar-nav">
+                <li class="mt-5"><a style="font-weight: 700;">Home</a></li>
+                <li class="mt-5"><a style="font-weight: 700;">Shop</a></li>
+                <li class="mt-5"><a style="font-weight: 700;">About</a></li>
+                <li class="mt-5"><a style="font-weight: 700;">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <p>Help</p>
+            <ul class="navbar-nav">
+                <li class="mt-5"><a style="font-weight: 700;">Payment Option</a></li>
+                <li class="mt-5"><a style="font-weight: 700;">Returns</a></li>
+                <li class="mt-5"><a style="font-weight: 700;">Privacy Policies</a></li>
+            </ul>
+        </div>
+        <div class="last_input_part mt-5" style="text-align: left;">
+            <p>Newsletter</p>
+            <input type="text" class="btn mt-4" placeholder="Enter Your Email Address"
+                style="border-bottom: 2px solid black;">
+            <button class="btn mt-3" style="font-weight: 700; border-bottom: 2px solid black;">Subscribe</button>
+        </div>
+    </div>
+</body>
+
+</html>

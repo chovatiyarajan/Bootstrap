@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .shop_page_1st_section {
+            background-image: url("../BootsTrap/img/Rectangle\ 1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40vh;
+        }
+
+        .shope_pagination {
+            padding: 20px 30px;
+            margin: 0px 20px;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        @media screen and (max-width:575px) {
+        .menu_a_img {
+            margin: 6px 0;
+        }
+
+        .card_1 {
+            margin: 20px 0;
+        }
+        .last_section{
+            flex-wrap: wrap;
+        }
+        .last_input_part{
+            text-align: center !important;
+        }
+        .last_btn{
+            width: 100% !important;
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        .home_section {
+            width: 100% !important;
+            justify-content: center !important;
+        }
+
+        .home_section_t {
+            width: 95% !important;
+            margin: 0 !important;
+            padding: 20px !important;
+        }
+
+        .browse_img {
+            margin: 30px 0;
+        }
+        .content_main{
+            flex-direction: column;
+        }
+        .content_main_1st{
+            width: 100% !important;
+        }
+        .content_main_2nd{
+            width: 100% !important;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light ">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
+            <a class="navbar-link" href="#"><img src="../BootsTrap/img/Meubel House_Logos-05.png"></a>
+            <h1>Furniro</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" style="justify-content: flex-end;" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_shoppage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_aboutpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_contentpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">content</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" collapse navbar-collapse text-center  float-right" style="justify-content: flex-end;"
+                id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_checkoutpage.html"><img
+                                style="padding: 10px 20px;" src="../BootsTrap/img/mdi_account-alert-outline.png"
+                                class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage_blogpage.html"><img
+                                style="padding: 10px 20px;" src="../BootsTrap/img/akar-icons_search.png"
+                                class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="#"><img style="padding: 10px 20px;"
+                                src="../BootsTrap/img/akar-icons_heart.png" class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_all" href="BS5 !st Responsive WebPage cart page.html"><img
+                                style="padding: 10px 20px;"
+                                src="../BootsTrap/img/ant-design_shopping-cart-outlined.png"
+                                class="menu_a_img"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="shop_page_1st_section w-100 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1>cart</h1>
+            <a href="BS5 !st Responsive WebPage.html"><button class="btn"
+                    style="font-weight: 700;">home</button></a><span style="font-weight: 900;">></span><a
+                href="BS5 !st Responsive WebPage_contentpage.html"><button class="btn"
+                    style="font-weight: 700;">content</button></a>
+        </div>
+    </div>
+    <div class="container-fluid text-center mt-5 mb-5">
+        <h1>Get In Touch With Us</h1>
+        <p style="color: gray;">For More Information About Our Product & Services. Please Feel Free To Drop Us An Email.<br>Our Staff Always Be
+            There To Help You Out. Do Not Hesitate!</p>
+    </div>
+    <div class="d-flex mt-5 content_main">
+        <div style="width: 50%;" class="content_main_1st">
+            <div class="d-flex align-items-center" style="justify-content: space-evenly;">
+                <img src="../BootsTrap/img/Vector (5).png" height="30px">
+                <div>
+                    <h3>Address</h3>
+                    <p>236 5th SE Avenue,<br> New York NY10000,<br> United States</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center" style="justify-content: space-evenly;">
+                <img src="../BootsTrap/img/Vector (6).png" height="30px">
+                <div>
+                    <h3>Address</h3>
+                    <p>236 5th SE Avenue,<br> New York NY10000,<br> United States</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center" style="justify-content: space-evenly;">
+                <img src="../BootsTrap/img/bi_clock-fill.png" height="30px">
+                <div>
+                    <h3>Address</h3>
+                    <p>236 5th SE Avenue,<br> New York NY10000,<br> United States</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 50%;" class="p-5 content_main_2nd">
+            <div class="row">
+                <div class="col-md-12">
+                    <label class="mb-3 mt-3">Your name</label>
+                    <input class="form-control p-3" type="text" placeholder="A B C">
+                </div>
+                <div class="col-md-12">
+                    <label class="mb-3 mt-3">Email address</label>
+                    <input class="form-control p-3" type="text" placeholder="Abc@def.com">
+                </div>
+                <div class="col-md-12">
+                    <label class="mb-3 mt-3">Subject</label>
+                    <input class="form-control p-3 " type="text" placeholder="This is an optional">
+                </div>
+                <div class="col-md-12">
+                    <label class="mb-3 mt-3">Message</label>
+                    <textarea class="form-control p-3" type="text" placeholder="Hi! i’d like to ask about"></textarea>
+                </div>
+                <div class="mb-3 mt-5">
+                    <button type="button" class="btn btn-warning last_btn" style="width: 300px;"> Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

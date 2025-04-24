@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .shop_page_1st_section {
+            background-image: url(/Users/HELLO/Downloads/Rectangle\ 1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40vh;
+        }
+
+        .shope_pagination {
+            padding: 20px 30px;
+            margin: 0px 20px;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        @media screen and (max-width:1400px) {
+            .blog_con_1{
+                width: 100% !important;
+            }
+            .blog_con_2{
+                width: 100% !important;
+            }
+            .blog_con_main{
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .blog_con_1_1{
+                width: 100% !important;
+            }
+        }
+        @media screen and (max-width:500px) {
+            .blog_con_1_1{
+                flex-direction: column;
+                align-items: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light ">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
+            <a class="navbar-link" href="#"><img src="../BOOTSTRAP/New folder/Meubel House_Logos-05.png"></a>
+            <h1>Furniro</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" style="justify-content: flex-end;" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS5 !st Responsive WebPage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS5 !st Responsive WebPage_shoppage.html"
+                            style="padding: 10px 30px; font-weight: 900;">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS5 !st Responsive WebPage_aboutpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS5 !st Responsive WebPage_contentpage.html"
+                            style="padding: 10px 30px; font-weight: 900;">content</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" collapse navbar-collapse text-center  float-right" style="justify-content: flex-end;"
+                id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS5 !st Responsive WebPage_checkoutpage.html"><img style="padding: 10px 20px;"
+                                src="/Users/HELLO/Downloads/Vector.png" class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS5 !st Responsive WebPage_blogpage.html"><img
+                                style="padding: 10px 20px;" src="/Users/HELLO/Downloads/akar-icons_search.png"
+                                class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img style="padding: 10px 20px;"
+                                src="/Users/HELLO/Downloads/akar-icons_heart.png" class="menu_a_img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS5 !st Responsive WebPage_shoppage.html"><img style="padding: 10px 20px;"
+                                src="/Users/HELLO/Downloads/ant-design_shopping-cart-outlined.png"
+                                class="menu_a_img"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="shop_page_1st_section w-100 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1>cart</h1>
+            <a href="BS5 !st Responsive WebPage.html"><button class="btn"
+                    style="font-weight: 700;">home</button></a><span style="font-weight: 900;">></span><a
+                href="BS5 !st Responsive WebPage_blogpage.html"><button class="btn"
+                    style="font-weight: 700;">blog</button></a>
+        </div>
+    </div>
+    <div class="d-flex mt-5 blog_con_main">
+        <div style="width: 75%;" class="p-5 blog_con_1">
+            <img src="/Users/HELLO/Downloads/Rectangle 68.png" width="100%">
+            <div class="d-flex mt-4">
+                <div class="d-flex blog_con_1_1" style="justify-content: space-evenly; width: 40%;">
+                    <div class="d-flex ">
+                        <img src="/Users/HELLO/Downloads/Vector (10).png" height="30px" style="margin-right: 10px;">
+                        <p>Admin</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="/Users/HELLO/Downloads/Vector (11).png" height="30px" style="margin-right: 10px;">
+                        <p>14 Oct 2022</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="/Users/HELLO/Downloads/Vector (12).png" height="30px" style="margin-right: 10px;">
+                        <p>Wood</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="mt-4">Going all-in with millennial design</h1>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere
+                sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim
+                sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed
+                blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque
+                ornare aenean euismod elementum.</p>
+            <button class="btn btn-outline-dark" style="border-bottom: 2px solid black !important; border: none;">Read More</button>
+
+            <img src="/Users/HELLO/Downloads/Rectangle 68 (1).png" width="100%" class="mt-5">
+            <div class="d-flex mt-4">
+                <div class="d-flex blog_con_1_1" style="justify-content: space-evenly; width: 40%;">
+                    <div class="d-flex">
+                        <img src="/Users/HELLO/Downloads/Vector (10).png" height="30px" style="margin-right: 10px;">
+                        <p>Admin</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="/Users/HELLO/Downloads/Vector (11).png" height="30px" style="margin-right: 10px;">
+                        <p>14 Oct 2022</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="/Users/HELLO/Downloads/Vector (12).png" height="30px" style="margin-right: 10px;">
+                        <p>Handmade</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="mt-4">Exploring new ways of decorating</h1>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere
+                sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim
+                sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed
+                blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque
+                ornare aenean euismod elementum.</p>
+            <button class="btn btn-outline-dark" style="border-bottom: 2px solid black !important; border: none;">Read More</button>
+
+            <img src="/Users/HELLO/Downloads/Rectangle 68 (2).png" width="100%" class="mt-5">
+            <div class="d-flex mt-4">
+                <div class="d-flex blog_con_1_1" style="justify-content: space-evenly; width: 40%;">
+                    <div class="d-flex ">
+                        <img src="/Users/HELLO/Downloads/Vector (10).png" height="30px" style="margin-right: 10px;">
+                        <p>Admin</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="/Users/HELLO/Downloads/Vector (11).png" height="30px" style="margin-right: 10px;">
+                        <p>14 Oct 2022</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="/Users/HELLO/Downloads/Vector (12).png" height="30px" style="margin-right: 10px;">
+                        <p>Handmade</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="mt-4">Exploring new ways of decorating</h1>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere
+                sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim
+                sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed
+                blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque
+                ornare aenean euismod elementum.</p>
+            <button class="btn btn-outline-dark" style="border-bottom: 2px solid black !important; border: none;">Read More</button>
+        </div>
+        <div style="width: 25%;" class="blog_con_2 mt-5 p-5">
+            <input class="form-control w-100 btn-outline-dark" type="text" >
+            <h2 class="mt-3">Categories</h2>
+            <div class="w-100 mt-5">
+                <div class="w-100 d-flex" style="justify-content: space-between; font-size: 23px; color: grey;">
+                    <p  >crafts</p>
+                    <p>2</p>
+                </div>
+            </div>
+            <div class="w-100 mt-3">
+                <div class="w-100 d-flex" style="justify-content: space-between; font-size: 23px; color: grey;">
+                    <p>Design</p>
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="w-100 mt-3">
+                <div class="w-100 d-flex" style="justify-content: space-between; font-size: 23px; color: grey;">
+                    <p>Handmade</p>
+                    <p>7</p>
+                </div>
+            </div>
+            <div class="w-100 mt-3">
+                <div class="w-100 d-flex" style="justify-content: space-between; font-size: 23px; color: grey;">
+                    <p>Interior</p>
+                    <p>1</p>
+                </div>
+            </div>
+            <div class="w-100 mt-3">
+                <div class="w-100 d-flex" style="justify-content: space-between; font-size: 23px; color: grey;">
+                    <p>Wood</p>
+                    <p>6</p>
+                </div>
+            </div>
+            <div class="mt-5">
+                <h2>Recent Posts</h2>
+                <div class="d-flex w-100 mt-5 ">
+                    <img src="/Users/HELLO/Downloads/Rectangle 69.png" width="100px">
+                    <div style="margin-left: 10px;">
+                        <h5>Going all-in with millennial design</h5>
+                        <p>03 Aug 2022</p>
+                    </div>
+                </div>
+                <div class="d-flex w-100 mt-5">
+                    <img src="/Users/HELLO/Downloads/Rectangle 69 (1).png" width="100px">
+                    <div style="margin-left: 10px;">
+                        <h5>Exploring new ways of decorating</h5>
+                        <p>03 Aug 2022</p>
+                    </div>
+                </div>
+                <div class="d-flex w-100 mt-5">
+                    <img src="/Users/HELLO/Downloads/Rectangle 69 (2).png" width="100px">
+                    <div style="margin-left: 10px;">
+                        <h5>Handmade pieces that took time to make</h5>
+                        <p>03 Aug 2022</p>
+                    </div>
+                </div>
+                <div class="d-flex w-100 mt-5">
+                    <img src="/Users/HELLO/Downloads/Rectangle 69 (3).png" width="100px">
+                    <div style="margin-left: 10px;">
+                        <h5>Modern home in Milan</h5>
+                        <p>03 Aug 2022</p>
+                    </div>
+                </div>
+                <div class="d-flex w-100 mt-5">
+                    <img src="/Users/HELLO/Downloads/Rectangle 69 (4).png" width="100px">
+                    <div style="margin-left: 10px;">
+                        <h5>Colorful office redesign</h5>
+                        <p>03 Aug 2022</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+
+</html>
