@@ -23,39 +23,42 @@
             font-size: x-large;
             font-weight: 700;
         }
+
         @media screen and (max-width:575px) {
-        .menu_a_img {
-            margin: 6px 0;
+            .menu_a_img {
+                margin: 6px 0;
+            }
+
+            .card_1 {
+                margin: 20px 0;
+            }
+
+            .last_section {
+                flex-wrap: wrap;
+            }
+
+            .last_input_part {
+                text-align: center !important;
+            }
         }
 
-        .card_1 {
-            margin: 20px 0;
-        }
-        .last_section{
-            flex-wrap: wrap;
-        }
-        .last_input_part{
-            text-align: center !important;
-        }
-    }
+        @media screen and (max-width:800px) {
+            .home_section {
+                width: 100% !important;
+                justify-content: center !important;
+            }
 
-    @media screen and (max-width:800px) {
-        .home_section {
-            width: 100% !important;
-            justify-content: center !important;
-        }
+            .home_section_t {
+                width: 95% !important;
+                margin: 0 !important;
+                padding: 20px !important;
+            }
 
-        .home_section_t {
-            width: 95% !important;
-            margin: 0 !important;
-            padding: 20px !important;
-        }
+            .browse_img {
+                margin: 30px 0;
+            }
 
-        .browse_img {
-            margin: 30px 0;
         }
-        
-    }
     </style>
 </head>
 
@@ -92,24 +95,20 @@
                 id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link nav-link_all" href="checkout.html"><img
-                                style="padding: 10px 20px;" src="img/mdi_account-alert-outline.png"
-                                class="menu_a_img"></a>
+                        <a class="nav-link nav-link_all" href="checkout.html"><img style="padding: 10px 20px;"
+                                src="img/mdi_account-alert-outline.png" class="menu_a_img"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link_all" href="blog.html"><img
-                                style="padding: 10px 20px;" src="img/akar-icons_search.png"
-                                class="menu_a_img"></a>
+                        <a class="nav-link nav-link_all" href=""><img style="padding: 10px 20px;"
+                                src="img/akar-icons_search.png" class="menu_a_img"></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link_all" href="#"><img style="padding: 10px 20px;"
                                 src="img/akar-icons_heart.png" class="menu_a_img"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link_all" href="cart.html"><img
-                                style="padding: 10px 20px;"
-                                src="img/ant-design_shopping-cart-outlined.png"
-                                class="menu_a_img"></a>
+                        <a class="nav-link nav-link_all" href="cart.html"><img style="padding: 10px 20px;"
+                                src="img/ant-design_shopping-cart-outlined.png" class="menu_a_img"></a>
                     </li>
                 </ul>
             </div>
